@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Kontextmenü "PDF aufteilen" für PDF-Dateien
+; Skriptpfad: C:\Projects\SandrasHobbyTools\PDF Tools\SplitPDFs\SplitPDFs.ps1
+; Wenn der Ordner verschoben wird, den Pfad in der Befehlszeile anpassen.
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pdf\shell\SplitPDF]
+@="PDF aufteilen"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pdf\shell\SplitPDF\command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File \"C:\\Projects\\SandrasHobbyTools\\PDF Tools\\SplitPDFs\\SplitPDFs.ps1\" -Path \"%1\""

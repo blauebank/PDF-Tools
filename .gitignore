@@ -1,0 +1,14 @@
+# Logdateien enthalten lokale Dateipfade und bleiben aus dem Repository.
+*.log
+
+# Fremde Bibliotheken und Programmdateien.
+*.dll
+*.pdb
+*.nupkg
+*.msi
+
+# Ordner für lokal abgelegte Bibliotheken.
+CombinePDFs/lib/
+
+# Interne Planung bleibt privat und wird nicht versioniert.
+docs/superpowers/
